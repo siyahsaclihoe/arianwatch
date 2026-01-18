@@ -1,235 +1,361 @@
 <div align="center">
 
-# 🎬 ArianWatch
+# 🎌 ArianWatch
 
-### Türkçe Altyazılı Anime Streaming Platformu
-
-Modern, kullanıcı dostu ve tamamen ücretsiz anime izleme deneyimi.
+### Modern Türkçe Anime Streaming Platformu
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
-[![Next.js](https://img.shields.io/badge/Next.js-000000?logo=next.js&logoColor=white)](https://nextjs.org/)
-[![Express](https://img.shields.io/badge/Express-000000?logo=express&logoColor=white)](https://expressjs.com/)
+[![Node.js](https://img.shields.io/badge/Node.js-18+-green.svg)](https://nodejs.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue.svg)](https://www.typescriptlang.org/)
+[![Next.js](https://img.shields.io/badge/Next.js-Latest-black.svg)](https://nextjs.org/)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com)
 
-[🚀 Özellikler](#-özellikler) • [📦 Kurulum](#-kurulum) • [🛠️ Teknolojiler](#️-teknolojiler) • [📸 Ekran Görüntüleri](#-ekran-görüntüleri)
+**Kendi sunucunuzda çalıştırabileceğiniz, modern ve kullanıcı dostu anime streaming platformu**
+
+[Özellikler](#-özellikler) • [Kurulum](#-kurulum) • [Kullanım](#-kullanım) • [Teknolojiler](#-teknolojiler) • [Katkıda Bulunma](#-katkıda-bulunma)
+
+---
 
 </div>
 
----
+## 📋 İçindekiler
 
-## 🌟 Neden ArianWatch?
-
-ArianWatch, anime severler için sıfırdan tasarlanmış, modern ve özgür bir streaming platformudur. Kendi sunucunuzda çalıştırabilir, istediğiniz gibi özelleştirebilir ve topluluğunuzla paylaşabilirsiniz.
-
-### ✨ Öne Çıkan Özellikler
-
-🎨 **Netflix Tarzı Modern Arayüz**
-- Glassmorphism ve premium animasyonlar
-- 3D hover efektleri
-- Responsive ve mobile-friendly tasarım
-- Karanlık tema
-
-🤖 **AI Destekli Öneri Sistemi**
-- Ollama/Llama entegrasyonu
-- Kişiselleştirilmiş anime önerileri
-- Doğal dil desteği
-
-📺 **Gelişmiş Video Player**
-- Özel tasarım video oynatıcı
-- Intro atlama özelliği
-- Hız kontrolü ve klavye kısayolları
-- Bölüm geçişi
-
-👥 **Sosyal Özellikler**
-- Bölüm yorumları
-- İzleme listesi
-- Favoriler ve değerlendirme
-- Kullanıcı profilleri
-
-🛡️ **Admin Paneli**
-- Anime ve bölüm yönetimi
-- Hero slider düzenleme
-- Kullanıcı yönetimi
-- İstatistikler
+- [✨ Özellikler](#-özellikler)
+- [🎯 Öne Çıkan Yetenekler](#-öne-çıkan-yetenekler)
+- [🚀 Kurulum](#-kurulum)
+  - [Gereksinimler](#gereksinimler)
+  - [Hızlı Başlangıç](#hızlı-başlangıç)
+  - [Detaylı Kurulum](#detaylı-kurulum)
+  - [Windows Kullanıcıları İçin](#windows-kullanıcıları-için)
+- [💻 Kullanım](#-kullanım)
+- [🛠️ Teknolojiler](#️-teknolojiler)
+- [📁 Proje Yapısı](#-proje-yapısı)
+- [⚙️ Konfigürasyon](#️-konfigürasyon)
+- [👨‍💼 Admin Paneli](#-admin-paneli)
+- [🤖 AI Önerileri (Opsiyonel)](#-ai-önerileri-opsiyonel)
+- [🔐 Güvenlik](#-güvenlik)
+- [🤝 Katkıda Bulunma](#-katkıda-bulunma)
+- [📄 Lisans](#-lisans)
+- [📞 İletişim](#-iletişim)
 
 ---
 
-## 🚀 Özellikler
+## ✨ Özellikler
 
-### Kullanıcı Özellikleri
-- [x] HD kalitede anime izleme
-- [x] Gelişmiş arama ve filtreleme
-- [x] Türlere göre kategorize edilmiş içerik
-- [x] Haftalık yayın takvimi
-- [x] İzleme listesi ve favoriler
-- [x] Bölüm ilerlemesi takibi
-- [x] Responsive tasarım (mobil, tablet, desktop)
-- [x] Kullanıcı hesapları ve profiller
+### 🎬 Video & İzleme
+- **HD Kalitede Anime İzleme** - Kesintisiz streaming deneyimi
+- **Özel Video Oynatıcı** - Gömülü intro atla butonu
+- **Çoklu Altyazı Desteği** - Farklı çevirmenler ve versiyonlar
+- **Intro Atlama** - Otomatik veya manuel intro skip özelliği
+- **İzleme Geçmişi** - Kaldığınız yerden devam edin
 
-### Admin Özellikleri
-- [x] Anime ekleme/düzenleme/silme
-- [x] Bölüm yönetimi
-- [x] Hero slider düzenleme
-- [x] Kullanıcı rolleri (Admin, Moderator, User)
-- [x] İstatistik ve analitik
+### 📱 Kullanıcı Deneyimi
+- **Modern ve Responsive Tasarım** - Her cihazda mükemmel görünüm
+- **Gelişmiş Arama ve Filtreleme** - Türe, yıla, popülerliğe göre filtrele
+- **Karanlık/Aydınlık Tema** - Göz sağlığınız için tema seçenekleri
+- **Kişiselleştirilmiş Profiller** - Avatar, kapak fotoğrafı ve bio
+- **XP ve Seviye Sistemi** - İzledikçe seviye atlayın
 
-### AI Özellikleri
-- [x] Llama tabanlı öneri sistemi
-- [x] İzleme geçmişine göre öneriler
-- [x] Türkçe doğal dil desteği
-- [x] Bağlamsal sohbet
+### 📅 İçerik Yönetimi
+- **Haftalık Yayın Takvimi** - Yeni bölümleri kaçırmayın
+- **İzleme Listeleri** - İzliyorum, İzleyeceğim, Tamamlandı, Bırakıldı
+- **Favori Sistemı** - En sevdiğiniz animeleri kaydedin
+- **Anime Puanlama** - 1-10 arası puan verin
+
+### 💬 Sosyal Özellikler
+- **Bölüm Yorumları** - Topluluk ile etkileşim
+- **Spoiler Koruması** - Spoiler içeren yorumlar gizli
+- **Upvote/Downvote Sistemi** - En iyi yorumlar üstte
+- **Bildirim Sistemi** - Yanıtlar ve sistem bildirimleri
+
+### 🤖 Yapay Zeka
+- **AI Destekli Anime Önerileri** - Ollama/Llama 3.2 ile akıllı öneriler
+- **Kişiselleştirilmiş Öneri Motoru** - İzleme geçmişinize göre öneriler
+- **Arkadaş Canlısı AI Asistanı** - Doğal dil ile anime arama
+
+### 🛡️ Yönetim & Güvenlik
+- **Kapsamlı Admin Paneli** - Anime, bölüm, kullanıcı yönetimi
+- **Role-Based Access Control** - Admin, Moderator, Translator rolleri
+- **JWT Authentication** - Güvenli kimlik doğrulama
+- **Rate Limiting** - API koruma ve spam önleme
+- **Helmet.js** - Gelişmiş güvenlik başlıkları
 
 ---
 
-## 📦 Hızlı Kurulum
+## 🎯 Öne Çıkan Yetenekler
+
+| Özellik | Açıklama | Durum |
+|---------|----------|-------|
+| 🎥 **Custom Video Player** | Intro skip, klavye kısayolları, oynatma hızı kontrolü | ✅ Aktif |
+| 🤖 **AI Recommendations** | Llama 3.2 tabanlı akıllı anime önerileri | ✅ Aktif |
+| 📱 **Progressive Web App** | Mobil cihazlara yüklenebilir | 🚧 Yakında |
+| 🌐 **Multi-Language Support** | Çoklu dil desteği | 🚧 Yakında |
+| 📊 **Analytics Dashboard** | İstatistik ve raporlama | 🚧 Yakında |
+| 🔔 **Push Notifications** | Yeni bölüm bildirimleri | 🚧 Yakında |
+
+---
+
+## 🚀 Kurulum
 
 ### Gereksinimler
 
-Sisteminizde şunların yüklü olması gerekiyor:
-- **Node.js** 18 veya üzeri
-- **npm** veya **yarn**
-- **PostgreSQL** veya **SQLite** (SQLite öneriyoruz - kolay kurulum)
+Sisteminizde aşağıdaki yazılımların yüklü olması gerekmektedir:
 
-### ⚡ Otomatik Kurulum (Windows)
+- **Node.js** `18.x` veya üzeri ([İndir](https://nodejs.org/))
+- **npm** `9.x` veya üzeri (Node.js ile birlikte gelir)
+- **Git** ([İndir](https://git-scm.com/))
+- **SQLite** (opsiyonel, varsayılan olarak kullanılır)
+- **PostgreSQL** (opsiyonel, production için önerilir)
 
-1. **Repoyu indirin**
+### Hızlı Başlangıç
+
+```bash
+# 1. Projeyi klonla
+git clone https://github.com/siyahsaclihoe/arianwatch.git
+cd arianwatch
+
+# 2. Bağımlılıkları yükle
+npm install
+cd frontend && npm install && cd ..
+
+# 3. Ortam değişkenlerini ayarla
+cp .env.example .env
+# .env dosyasını düzenle
+
+# 4. Veritabanını hazırla
+npx prisma generate
+npx prisma db push
+
+# 5. Uygulamayı başlat (2 terminal gerekli)
+# Terminal 1 - Backend
+npm run dev
+
+# Terminal 2 - Frontend
+cd frontend && npm run dev
+```
+
+**Tarayıcıda açın:** `http://localhost:3000`
+
+---
+
+### Detaylı Kurulum
+
+#### 1️⃣ **Projeyi İndirin**
+
 ```bash
 git clone https://github.com/siyahsaclihoe/arianwatch.git
 cd arianwatch
 ```
 
-2. **Kurulum script'ini çalıştırın**
-```bash
-start_ArianWatch.bat
-```
+#### 2️⃣ **Backend Bağımlılıklarını Yükleyin**
 
-Bu komut otomatik olarak:
-- Backend ve frontend bağımlılıklarını yükler
-- Veritabanını oluşturur
-- Gerekli yapılandırmayı yapar
-- Uygulamayı başlatır
-
-### 🔧 Manuel Kurulum
-
-#### 1. Repoyu Klonlayın
-```bash
-git clone https://github.com/siyahsaclihoe/arianwatch.git
-cd arianwatch
-```
-
-#### 2. Backend Bağımlılıklarını Yükleyin
 ```bash
 npm install
 ```
 
-#### 3. Frontend Bağımlılıklarını Yükleyin
+Bu komut şu paketleri yükleyecektir:
+- Express.js - Backend framework
+- Prisma - ORM (Object-Relational Mapping)
+- JWT - Token bazlı kimlik doğrulama
+- bcryptjs - Şifre hashleme
+- Axios - HTTP client
+- Winston - Logging
+- Helmet - Güvenlik middleware'i
+
+#### 3️⃣ **Frontend Bağımlılıklarını Yükleyin**
+
 ```bash
 cd frontend
 npm install
 cd ..
 ```
 
-#### 4. Ortam Değişkenlerini Ayarlayın
+Bu komut şu paketleri yükleyecektir:
+- Next.js - React framework
+- React & React DOM - UI library
+- Tailwind CSS - CSS framework
+- Lucide React - Icon library
+- TypeScript - Type safety
+
+#### 4️⃣ **Ortam Değişkenlerini Ayarlayın**
 
 Kök dizinde `.env` dosyası oluşturun:
 
 ```env
-# Veritabanı (SQLite - kolay kurulum)
+# Database
 DATABASE_URL="file:./dev.db"
+# Production için PostgreSQL:
+# DATABASE_URL="postgresql://user:password@localhost:5432/arianwatch?schema=public"
 
-# PostgreSQL kullanmak isterseniz:
-# DATABASE_URL="postgresql://kullanici:sifre@localhost:5432/arianwatch"
+# JWT Secrets (ÖNEMLİ: Bunları değiştirin!)
+JWT_ACCESS_SECRET="gizli-bir-anahtar-yaz-buraya-minimum-32-karakter"
+JWT_REFRESH_SECRET="baska-gizli-anahtar-yaz-buraya-minimum-32-karakter"
 
-# JWT Secret Keys (güvenli değerler kullanın!)
-JWT_ACCESS_SECRET="super-gizli-anahtar-buraya-yazin-min-32-karakter"
-JWT_REFRESH_SECRET="baska-gizli-refresh-anahtar-buraya-yazin"
-
-# Port
+# Server
 PORT=4000
+NODE_ENV=development
 
-# AI Öneri Sistemi (Opsiyonel - Ollama gerektirir)
-# OLLAMA_API_URL="http://localhost:11434"
+# AI (Opsiyonel)
+OLLAMA_API_URL="http://localhost:11434"
+OLLAMA_MODEL="llama3.2"
 ```
 
-#### 5. Veritabanını Hazırlayın
+> **⚠️ Güvenlik Uyarısı:** `JWT_ACCESS_SECRET` ve `JWT_REFRESH_SECRET` değerlerini mutlaka değiştirin! Production ortamında güçlü, rastgele anahtarlar kullanın.
+
+#### 5️⃣ **Veritabanını Hazırlayın**
+
 ```bash
+# Prisma client'ı oluştur
 npx prisma generate
+
+# Veritabanı şemasını uygula
 npx prisma db push
+
+# (Opsiyonel) Prisma Studio ile veritabanını görüntüle
+npx prisma studio
 ```
 
-#### 6. Uygulamayı Başlatın
+#### 6️⃣ **Uygulamayı Başlatın**
 
-**İki terminal açın:**
+İki farklı terminal penceresi açın:
 
 **Terminal 1 - Backend:**
 ```bash
 npm run dev
 ```
+✅ Backend `http://localhost:4000` adresinde çalışacak
 
 **Terminal 2 - Frontend:**
 ```bash
 cd frontend
 npm run dev
 ```
+✅ Frontend `http://localhost:3000` adresinde çalışacak
 
-#### 7. Tarayıcıda Açın
+#### 7️⃣ **Tarayıcıda Açın**
+
+Tarayıcınızda şu adresi açın:
 ```
-Frontend: http://localhost:3000
-Backend API: http://localhost:4000
+http://localhost:3000
 ```
 
 ---
 
-## 🎮 İlk Kullanım
+### Windows Kullanıcıları İçin
+
+Windows kullanıcıları için otomatik başlatma script'i mevcuttur:
+
+**`start_ArianWatch.bat`** dosyasına çift tıklayın.
+
+Bu script:
+- ✅ Gerekli bağımlılıkları kontrol eder
+- ✅ Backend ve Frontend'i otomatik başlatır
+- ✅ Tarayıcıda otomatik açar
+- ✅ Her şeyi tek tıkla halleder!
+
+---
+
+## 💻 Kullanım
+
+### İlk Kullanıcı Kaydı
+
+1. Ana sayfada **"Kayıt Ol"** butonuna tıklayın
+2. Kullanıcı adı, email ve şifre girin
+3. Kayıt olduktan sonra otomatik giriş yapılacak
 
 ### Admin Hesabı Oluşturma
 
-1. Normal bir kullanıcı kaydı yapın
-2. Prisma Studio'yu açın:
+İlk kullanıcıyı admin yapmak için:
+
+**Yöntem 1: Prisma Studio**
 ```bash
 npx prisma studio
 ```
-3. `User` tablosunda oluşturduğunuz kullanıcıyı bulun
-4. `role` alanını `ADMIN` olarak değiştirin
-5. Sayfayı yenileyin - artık admin paneline erişebilirsiniz!
+- `User` tablosuna gidin
+- İlgili kullanıcının `role` alanını `ADMIN` yapın
 
-### AI Öneri Sistemini Aktifleştirme (Opsiyonel)
-
-1. **Ollama'yı yükleyin**: https://ollama.ai/download
-2. **Llama modelini indirin**:
+**Yöntem 2: Script ile**
 ```bash
-ollama pull llama3.2
+npx ts-node make-admin.ts
 ```
-3. `.env` dosyasındaki AI ayarlarını aktif edin
-4. Backend'i yeniden başlatın
+- Kullanıcı adını girin
+- Admin yetkisi otomatik verilecek
+
+### Admin Panel
+
+Admin hesabıyla giriş yaptıktan sonra:
+- Navbar'da profil dropdown menüsünden **"Admin Panel"** seçin
+- Veya direkt `http://localhost:3000/admin` adresine gidin
+
+**Admin Panelinde Yapabilecekleriniz:**
+- 📺 **Anime Yönetimi:** Yeni anime ekle, düzenle, sil
+- 🎬 **Bölüm Yönetimi:** Bölüm ekle/düzenle, intro zamanlarını ayarla
+- 👥 **Kullanıcı Yönetimi:** Kullanıcıları göster, rol değiştir
+- 🎨 **Hero Slider:** Ana sayfa slider'ını yönet
+- 💬 **Yorum Moderasyonu:** Yorumları gizle/göster
+
+### Anime Ekleme
+
+1. Admin Panel > Anime Yönetimi > Yeni Anime Ekle
+2. Gerekli bilgileri doldurun:
+   - **Başlık:** Anime adı
+   - **Slug:** URL-friendly isim (örn: `attack-on-titan`)
+   - **Synopsis:** Kısa açıklama
+   - **Türler:** Virgülle ayrılmış (örn: `Aksiyon, Macera, Drama`)
+   - **Yıl:** 2024
+   - **Poster URL:** Anime görseli
+   - **Yayın Günü:** Pazartesi=0, Salı=1, ..., Pazar=6
+   - **Yayın Saati:** `14:30` formatında
+3. Kaydet
+
+### Bölüm Ekleme
+
+1. Admin Panel > Anime Yönetimi > Animenin yanındaki **"Bölümler"** butonu
+2. Yeni Bölüm Ekle
+3. Bilgileri doldurun:
+   - **Bölüm Numarası:** 1, 2, 3, ...
+   - **Başlık:** (Opsiyonel) Bölüm başlığı
+   - **Embed URL:** Video URL'i
+   - **Intro Başlangıç:** `1:30` formatında (dakika:saniye)
+   - **Intro Bitiş:** `3:00` formatında
+4. Kaydet
 
 ---
 
 ## 🛠️ Teknolojiler
 
-### Frontend
-| Teknoloji | Açıklama |
-|-----------|----------|
-| **Next.js 16** | React framework (Turbopack) |
-| **TypeScript** | Type-safe geliştirme |
-| **Tailwind CSS** | Utility-first CSS framework |
-| **Lucide Icons** | Modern icon seti |
-| **Axios** | HTTP client |
+### Frontend Stack
 
-### Backend
-| Teknoloji | Açıklama |
-|-----------|----------|
-| **Express.js** | Node.js web framework |
-| **Prisma ORM** | Modern database toolkit |
-| **PostgreSQL/SQLite** | Veritabanı |
-| **JWT** | Authentication |
-| **bcrypt** | Password hashing |
+| Teknoloji | Versiyon | Açıklama |
+|-----------|----------|----------|
+| **Next.js** | Latest | React framework, SSR desteği |
+| **React** | 18+ | UI library |
+| **TypeScript** | 5.0 | Type safety |
+| **Tailwind CSS** | 3.0 | Utility-first CSS |
+| **Lucide React** | Latest | Modern icon kütüphanesi |
+| **Axios** | 1.0+ | HTTP client |
 
-### AI (Opsiyonel)
-| Teknoloji | Açıklama |
-|-----------|----------|
-| **Ollama** | Local AI runtime |
-| **Llama 3.2** | Language model |
+### Backend Stack
+
+| Teknoloji | Versiyon | Açıklama |
+|-----------|----------|----------|
+| **Express.js** | 4.18+ | Web framework |
+| **TypeScript** | 5.0 | Type safety |
+| **Prisma** | 5.0+ | ORM (Object-Relational Mapping) |
+| **SQLite** | - | Development veritabanı |
+| **PostgreSQL** | - | Production veritabanı (opsiyonel) |
+| **JWT** | 9.0+ | Token-based authentication |
+| **bcryptjs** | 2.4+ | Password hashing |
+| **Winston** | 3.0+ | Logging library |
+| **Helmet** | 8.1+ | Security middleware |
+| **Express Rate Limit** | 8.2+ | API rate limiting |
+
+### AI & External Services
+
+| Servis | Açıklama |
+|--------|----------|
+| **Ollama** | Local AI inference engine |
+| **Llama 3.2** | Meta'nın language model'i |
 
 ---
 
@@ -237,160 +363,379 @@ ollama pull llama3.2
 
 ```
 arianwatch/
-├── 📂 frontend/              # Next.js Frontend
+│
+├── 📂 frontend/                 # Next.js Frontend
 │   ├── 📂 src/
-│   │   ├── 📂 components/    # React componentleri
-│   │   │   ├── Navbar.tsx
-│   │   │   ├── Sidebar.tsx
-│   │   │   ├── Hero.tsx
-│   │   │   ├── AnimeCard.tsx
+│   │   ├── 📂 components/       # React bileşenleri
+│   │   │   ├── Navbar.tsx       # Navigation bar
+│   │   │   ├── Sidebar.tsx      # Sidebar menu
+│   │   │   ├── AnimeCard.tsx    # Anime kartı
+│   │   │   ├── VideoPlayer.tsx  # Custom video player
+│   │   │   ├── AIRecommend.tsx  # AI öneri bileşeni
 │   │   │   └── ...
-│   │   ├── 📂 pages/         # Next.js sayfaları
-│   │   │   ├── index.tsx     # Ana sayfa
-│   │   │   ├── anime/[id].tsx
-│   │   │   ├── admin.tsx
+│   │   ├── 📂 pages/            # Next.js sayfaları
+│   │   │   ├── index.tsx        # Ana sayfa
+│   │   │   ├── anime/
+│   │   │   │   └── [id].tsx     # Anime detay sayfası
+│   │   │   ├── admin.tsx        # Admin panel
+│   │   │   ├── schedule.tsx     # Yayın takvimi
+│   │   │   ├── settings.tsx     # Ayarlar
 │   │   │   └── ...
-│   │   ├── 📂 styles/        # CSS dosyaları
-│   │   └── 📂 context/       # React Context
-│   └── 📂 public/            # Statik dosyalar
+│   │   ├── 📂 context/          # React context'ler
+│   │   │   └── AuthContext.tsx  # Authentication context
+│   │   ├── 📂 styles/           # CSS dosyaları
+│   │   │   └── globals.css      # Global stiller
+│   │   └── 📂 utils/            # Yardımcı fonksiyonlar
+│   ├── 📂 public/               # Static dosyalar
+│   ├── package.json
+│   ├── tsconfig.json
+│   └── tailwind.config.js
 │
-├── 📂 src/                   # Express Backend
-│   ├── 📂 routes/            # API route'ları
-│   │   ├── animeRoutes.ts
-│   │   ├── authRoutes.ts
-│   │   ├── aiRoutes.ts
+├── 📂 src/                      # Express Backend
+│   ├── 📂 routes/               # API route'ları
+│   │   ├── authRoutes.ts        # Kimlik doğrulama
+│   │   ├── animeRoutes.ts       # Anime CRUD
+│   │   ├── episodeRoutes.ts     # Bölüm CRUD
+│   │   ├── userRoutes.ts        # Kullanıcı işlemleri
+│   │   ├── commentRoutes.ts     # Yorum sistemi
 │   │   └── ...
-│   ├── 📂 middleware/        # Express middleware
-│   └── server.ts             # Ana sunucu dosyası
+│   ├── 📂 middleware/           # Express middleware'ler
+│   │   ├── auth.ts              # JWT doğrulama
+│   │   └── roleCheck.ts         # Role-based access
+│   ├── 📂 utils/                # Yardımcı fonksiyonlar
+│   │   └── logger.ts            # Winston logger
+│   └── server.ts                # Ana server dosyası
 │
-├── 📂 prisma/                # Prisma ORM
-│   └── schema.prisma         # Veritabanı şeması
+├── 📂 prisma/                   # Prisma ORM
+│   ├── schema.prisma            # Veritabanı şeması
+│   └── dev.db                   # SQLite veritabanı (git'te yok)
 │
-├── 📄 package.json
-├── 📄 .env                   # Ortam değişkenleri
-├── 📄 README.md
-└── 📄 LICENSE
+├── 📄 .env                      # Ortam değişkenleri (git'te yok)
+├── 📄 .env.example              # Örnek .env dosyası
+├── 📄 .gitignore                # Git ignore kuralları
+├── 📄 LICENSE                   # MIT Lisansı
+├── 📄 README.md                 # Bu dosya
+├── 📄 package.json              # Backend dependencies
+├── 📄 tsconfig.json             # TypeScript config
+├── 📄 make-admin.ts             # Admin yapma script'i
+└── 📄 start_ArianWatch.bat      # Windows başlatma script'i
 ```
 
 ---
 
-## 🎯 API Endpoints
+## ⚙️ Konfigürasyon
 
-### Authentication
-```
-POST   /api/auth/register     # Kayıt ol
-POST   /api/auth/login        # Giriş yap
-POST   /api/auth/reset-password  # Şifre sıfırla
-```
+### Database Configuration
 
-### Anime
-```
-GET    /api/anime             # Tüm animeler
-GET    /api/anime/:id         # Anime detay
-POST   /api/anime             # Anime ekle (Admin)
-PUT    /api/anime/:id         # Anime düzenle (Admin)
-DELETE /api/anime/:id         # Anime sil (Admin)
+**SQLite (Development):**
+```env
+DATABASE_URL="file:./dev.db"
 ```
 
-### Episodes
-```
-GET    /api/anime/:id/episodes  # Anime bölümleri
-POST   /api/episodes            # Bölüm ekle (Admin)
+**PostgreSQL (Production):**
+```env
+DATABASE_URL="postgresql://username:password@localhost:5432/arianwatch?schema=public"
 ```
 
-### AI Recommendations
+Veritabanını değiştirdikten sonra:
+```bash
+npx prisma db push
+npx prisma generate
 ```
-POST   /api/ai/recommend      # AI öneri al
-GET    /api/ai/status         # AI durumu
+
+### JWT Configuration
+
+`.env` dosyasında:
+```env
+JWT_ACCESS_SECRET="minimum-32-karakter-uzunlugunda-rastgele-string"
+JWT_REFRESH_SECRET="baska-minimum-32-karakter-uzunlugunda-rastgele-string"
+```
+
+Güvenli anahtar oluşturmak için:
+```bash
+# Node.js REPL'de
+node -e "console.log(require('crypto').randomBytes(32).toString('hex'))"
+```
+
+### CORS Configuration
+
+`src/server.ts` dosyasında:
+```typescript
+app.use(cors({
+  origin: 'http://localhost:3000', // Frontend URL'i
+  credentials: true
+}));
+```
+
+Production için:
+```typescript
+app.use(cors({
+  origin: process.env.FRONTEND_URL || 'https://yourdomain.com',
+  credentials: true
+}));
 ```
 
 ---
 
-## 🎨 Tasarım Özellikleri
+## 👨‍💼 Admin Paneli
 
-- **Glassmorphism**: Modern cam efektli kartlar
-- **3D Tilt Effects**: Mouse takipli anime kartları
-- **Smooth Animations**: 60 FPS akıcı animasyonlar
-- **Floating Particles**: Dinamik arka plan efektleri
-- **Netflix-Style Carousel**: Otomatik geçişli slider
-- **Horizontal Scrolling**: Kategori bazlı kaydırma
-- **Skeleton Loading**: Shimmer efektli yükleme
+### Admin Rolü Verme
+
+**Script ile:**
+```bash
+npx ts-node make-admin.ts
+```
+
+**Manuel olarak (Prisma Studio):**
+```bash
+npx prisma studio
+```
+- User tablosunda kullanıcıyı bulun
+- `role` alanını `ADMIN` yapın
+
+### Admin Panel Özellikleri
+
+#### 📺 Anime Yönetimi
+- Yeni anime ekleme
+- Mevcut anime düzenleme
+- Anime silme
+- Bölüm listesi görüntüleme
+
+#### 🎬 Bölüm Yönetimi
+- Bölüm ekleme
+- Embed URL güncelleme
+- Intro zamanlarını ayarlama (format: `1:30`)
+- Altyazı varyantları ekleme
+
+#### 👥 Kullanıcı Yönetimi
+- Tüm kullanıcıları görüntüleme
+- Kullanıcı rollerini değiştirme
+  - `USER` - Normal kullanıcı
+  - `MODERATOR` - Moderatör
+  - `TRANSLATOR` - Çevirmen
+  - `ADMIN` - Yönetici
+
+#### 🎨 Hero Slider Yönetimi
+- Ana sayfa slider'ına yeni slide ekleme
+- Mevcut slide'ları düzenleme
+- Sıralama ayarlama
+- Aktif/Pasif yapma
+
+#### 💬 Yorum Moderasyonu
+- Tüm yorumları görüntüleme
+- İstenmeyen yorumları gizleme
+- Spoiler işaretleme
+
+---
+
+## 🤖 AI Önerileri (Opsiyonel)
+
+ArianWatch, Ollama ve Llama 3.2 kullanarak akıllı anime önerileri sunar.
+
+### Ollama Kurulumu
+
+1. **Ollama'yı İndirin**
+   - [Ollama.ai](https://ollama.ai/) adresinden indirin
+   - Windows, macOS veya Linux için kurulum yapın
+
+2. **Llama 3.2 Modelini İndirin**
+   ```bash
+   ollama pull llama3.2
+   ```
+
+3. **Ollama'yı Başlatın**
+   ```bash
+   ollama serve
+   ```
+   Varsayılan olarak `http://localhost:11434` adresinde çalışır
+
+4. **`.env` Dosyasını Güncelleyin**
+   ```env
+   OLLAMA_API_URL="http://localhost:11434"
+   OLLAMA_MODEL="llama3.2"
+   ```
+
+### AI Özelliklerini Test Etme
+
+1. Uygulamayı başlatın
+2. Arama çubuğundaki **AI** butonuna tıklayın
+3. "Aksiyon animeleri öner" gibi bir şey yazın
+4. AI sizin için kişiselleştirilmiş öneriler sunacak
+
+AI Asistanı:
+- ✅ İzleme geçmişinizi analiz eder
+- ✅ İzleme listenizdeki animeleri dikkate alır
+- ✅ Tercihlerinize göre öneriler sunar
+- ✅ Arkadaş canlısı ve saygılı bir dil kullanır
 
 ---
 
 ## 🔐 Güvenlik
 
-- JWT tabanlı authentication
-- bcrypt ile şifre hashleme
-- Role-based access control (RBAC)
-- SQL injection koruması (Prisma)
-- XSS koruması
-- CORS yapılandırması
+### Uygulanan Güvenlik Önlemleri
 
----
+- ✅ **JWT Authentication** - Token bazlı güvenli kimlik doğrulama
+- ✅ **bcrypt Password Hashing** - Şifreler hashlenmiş olarak saklanır
+- ✅ **Helmet.js** - HTTP güvenlik başlıkları
+- ✅ **CORS Protection** - Cross-Origin istekleri kontrol edilir
+- ✅ **Rate Limiting** - API abuse önleme
+- ✅ **Input Validation** - SQL injection önleme
+- ✅ **Role-Based Access Control** - Yetki bazlı erişim
 
-## 🚧 Geliştirme Planları
+### Güvenlik En İyi Pratikleri
 
-- [ ] Video upload sistemi
-- [ ] Çoklu dil desteği
-- [ ] Mobil uygulama
-- [ ] Email bildirimleri
-- [ ] Social login (Google, Discord)
-- [ ] Watchlist senkronizasyonu
-- [ ] Offline izleme desteği
-- [ ] Subtitle editor
+1. **`.env` Dosyasını Asla Paylaşmayın**
+   - JWT secret'larınızı güvende tutun
+   - Production ortamında güçlü anahtarlar kullanın
 
----
+2. **Düzenli Güncellemeler**
+   ```bash
+   npm audit
+   npm audit fix
+   ```
 
-## 📸 Ekran Görüntüleri
+3. **HTTPS Kullanın**
+   - Production ortamında mutlaka HTTPS kullanın
+   - SSL sertifikası edinin (Let's Encrypt ücretsiz)
 
-> Not: Ekran görüntüleri yakında eklenecek!
+4. **Veritabanı Yedekleme**
+   - Düzenli olarak veritabanı yedekleri alın
+   - Yedeklerinizi güvenli yerlerde saklayın
 
 ---
 
 ## 🤝 Katkıda Bulunma
 
-Katkılarınızı bekliyoruz! İşte nasıl katkıda bulunabilirsiniz:
+Katkılarınızı bekliyoruz! 🎉
 
-1. Bu repoyu fork edin
-2. Feature branch oluşturun (`git checkout -b feature/harika-ozellik`)
-3. Değişikliklerinizi commit edin (`git commit -m 'Harika özellik eklendi'`)
-4. Branch'inizi push edin (`git push origin feature/harika-ozellik`)
-5. Pull Request açın
+### Nasıl Katkıda Bulunulur?
 
-### Katkı Rehberi
-- Kod standartlarına uyun
-- Commit mesajlarını açıklayıcı yazın
-- Büyük değişiklikler için önce issue açın
-- Test ekleyin (yakında)
+1. **Fork Edin**
+   ```bash
+   # GitHub'da "Fork" butonuna tıklayın
+   ```
+
+2. **Klonlayın**
+   ```bash
+   git clone https://github.com/KULLANICI-ADINIZ/arianwatch.git
+   cd arianwatch
+   ```
+
+3. **Yeni Branch Oluşturun**
+   ```bash
+   git checkout -b feature/harika-ozellik
+   ```
+
+4. **Değişikliklerinizi Yapın**
+   - Kod yazın
+   - Test edin
+   - Commit edin
+   ```bash
+   git add .
+   git commit -m "✨ Harika özellik eklendi"
+   ```
+
+5. **Push Edin**
+   ```bash
+   git push origin feature/harika-ozellik
+   ```
+
+6. **Pull Request Açın**
+   - GitHub'da repository'nize gidin
+   - "New Pull Request" butonuna tıklayın
+   - Değişikliklerinizi açıklayın
+
+### Commit Mesajı Kuralları
+
+Commit mesajlarınızda emoji kullanın:
+
+- ✨ `:sparkles:` - Yeni özellik
+- 🐛 `:bug:` - Bug fix
+- 📝 `:memo:` - Dokümantasyon
+- 🎨 `:art:` - UI/UX iyileştirme
+- ⚡ `:zap:` - Performans iyileştirme
+- 🔒 `:lock:` - Güvenlik fix
+- ♻️ `:recycle:` - Refactoring
+
+Örnek:
+```bash
+git commit -m "✨ AI öneri sistemi eklendi"
+git commit -m "🐛 Video player bug'ı düzeltildi"
+git commit -m "📝 README güncellendi"
+```
+
+### Kod Standartları
+
+- TypeScript kullanın
+- ESLint kurallarına uyun
+- Anlamlı değişken isimleri kullanın
+- Kodunuzu yorum satırları ile açıklayın
+- Her PR için test yazın (gelecekte)
 
 ---
 
-## 📝 Lisans
+## 📄 Lisans
 
-Bu proje MIT lisansı altında lisanslanmıştır. Detaylar için [LICENSE](LICENSE) dosyasına bakın.
+Bu proje **MIT Lisansı** altında lisanslanmıştır.
+
+```
+MIT License
+
+Copyright (c) 2024 ArianWatch
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+```
+
+Detaylar için [LICENSE](LICENSE) dosyasına bakın.
 
 ---
 
-## 👨‍💻 Geliştirici
+## 📞 İletişim
 
-**siyahsaclihoe**
-- GitHub: [@siyahsaclihoe](https://github.com/siyahsaclihoe)
+### Geliştirici
 
----
+**GitHub:** [@siyahsaclihoe](https://github.com/siyahsaclihoe)
 
-## 🙏 Teşekkürler
+### Destek & Sorular
 
-Bu projeyi kullandığınız için teşekkürler! ⭐ vermeyi unutmayın!
+- 🐛 **Bug Bildirimi:** [GitHub Issues](https://github.com/siyahsaclihoe/arianwatch/issues)
+- 💡 **Özellik Önerisi:** [GitHub Discussions](https://github.com/siyahsaclihoe/arianwatch/discussions)
+- 📧 **Email:** Proje sahibiyle iletişim için GitHub profili
+
+### Topluluk
+
+- ⭐ Bu projeyi beğendiyseniz **GitHub'da yıldız** verin!
+- 🔄 **Fork** edin ve kendi versiyonunuzu oluşturun!
+- 🤝 **Katkıda bulunun** ve topluluğa katılın!
 
 ---
 
 <div align="center">
 
-**Made with ❤️ in Turkey**
+### 🌟 ArianWatch ile anime izlemenin keyfini çıkarın! 🌟
 
-🇹🇷
+**Made with ❤️ in Turkey 🇹🇷**
 
-[⬆ Başa Dön](#-arianwatch)
+[![GitHub Stars](https://img.shields.io/github/stars/siyahsaclihoe/arianwatch?style=social)](https://github.com/siyahsaclihoe/arianwatch)
+[![GitHub Forks](https://img.shields.io/github/forks/siyahsaclihoe/arianwatch?style=social)](https://github.com/siyahsaclihoe/arianwatch/fork)
+[![GitHub Issues](https://img.shields.io/github/issues/siyahsaclihoe/arianwatch)](https://github.com/siyahsaclihoe/arianwatch/issues)
+
+**[⬆ Yukarı Çık](#-arianwatch)**
 
 </div>
