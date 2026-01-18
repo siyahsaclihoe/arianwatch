@@ -1,0 +1,139 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+// Enhanced User Model
+model User {
+  id        String   @id @default(uuid())
+  username  String   @unique
+  email     String   @unique
+  password  String
+  role      String   @default("USER") // ADMIN, MODERATOR, TRANSLATOR, USER
+  xp        Int      @default(0)
+  rank      String   @default("Newbie") 
+  avatarUrl String?
+  coverUrl  String?
+  bio       String?
+  createdAt DateTime @default(now())
+  
+  comments  Comment[]
+  watchList WatchList[]
+  history   WatchHistory[]
+  notifications Notification[]
+}
+
+model Anime {
+  id          String   @id @default(uuid())
+  title       String
+  slug        String   @unique
+  synopsis    String
+  genres      String 
+  year        Int
+  posterUrl   String?
+  popularity  Int      @default(0)
+  broadcastDay  Int?     // 0=Pazartesi, 1=Salı, ..., 6=Pazar
+  broadcastTime String?  // "14:30" formatında
+  createdAt   DateTime @default(now())
+
+  episodes    Episode[]
+  watchLists  WatchList[]
+  comments    Comment[]
+  history     WatchHistory[]
+}
+
+model WatchList {
+  userId    String
+  animeId   String
+  status    String   @default("PLAN_TO_WATCH") // WATCHING, COMPLETED, PLAN_TO_WATCH, DROPPED
+  progress  Int      @default(0) // Episode count
+  score     Int?     // 1-10 rating
+  updatedAt DateTime @updatedAt
+
+  user      User     @relation(fields: [userId], references: [id])
+  anime     Anime    @relation(fields: [animeId], references: [id])
+
+  @@id([userId, animeId])
+}
+
+model Episode {
+  id         String   @id @default(uuid())
+  animeId    String
+  number     Int
+  title      String?
+  embedUrl   String   
+  introStart Int?     // Intro başlangıç zamanı (saniye)
+  introEnd   Int?     // Intro bitiş zamanı (saniye)
+  variants   SubtitleVariant[]
+  createdAt  DateTime @default(now())
+
+  anime      Anime    @relation(fields: [animeId], references: [id])
+}
+
+model SubtitleVariant {
+  id        String   @id @default(uuid())
+  episodeId String
+  language  String
+  srtContent String? 
+  authorId  String?
+  
+  episode   Episode @relation(fields: [episodeId], references: [id])
+}
+
+model Comment {
+  id        String   @id @default(uuid())
+  content   String
+  userId    String
+  animeId   String
+  parentId  String?  
+  upvotes   Int      @default(0)
+  downvotes Int      @default(0)
+  createdAt DateTime @default(now())
+  isHidden  Boolean  @default(false)
+  isSpoiler Boolean  @default(false)
+
+  user      User     @relation(fields: [userId], references: [id])
+  anime     Anime    @relation(fields: [animeId], references: [id])
+  parent    Comment? @relation("CommentReplies", fields: [parentId], references: [id])
+  children  Comment[] @relation("CommentReplies")
+}
+
+model WatchHistory {
+  userId      String
+  animeId     String
+  progress    Float    
+  updatedAt   DateTime @updatedAt
+
+  user        User     @relation(fields: [userId], references: [id])
+  anime       Anime    @relation(fields: [animeId], references: [id])
+
+  @@id([userId, animeId])
+}
+
+model Notification {
+  id        String   @id @default(uuid())
+  userId    String
+  title     String? 
+  message   String
+  link      String?
+  isRead    Boolean  @default(false)
+  type      String   @default("INFO") // INFO, REPLY, SYSTEM, LEVEL_UP
+  createdAt DateTime @default(now())
+
+  user      User     @relation(fields: [userId], references: [id])
+}
+
+model HeroSlide {
+  id          String   @id @default(uuid())
+  title       String
+  description String
+  imageUrl    String
+  animeId     String? // Optional: Link to an anime
+  order       Int      @default(0)
+  isActive    Boolean  @default(true)
+  createdAt   DateTime @default(now())
+}
