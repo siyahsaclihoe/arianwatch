@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🎌 ArianWatch
+# 🎌 ArianWatch New
 
 ### Modern Türkçe Anime Streaming Platformu
 
